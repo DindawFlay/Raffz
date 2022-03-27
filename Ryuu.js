@@ -3438,7 +3438,7 @@ case 'githubstalk':
 if (!isUser) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
 if (!c) return reply('example:githubstalk ERLANRAHMAT')
 reply(mess.wait)
-get = await fetch.json(`https://apikey-betabot.herokuapp.com/api/github/stalk?username={body.slice(12)}&apikey=BetaBotz`)
+get = await fetch.json(`https://apikey-betabot.herokuapp.com/api/github/stalk?username=${username}&apikey=BetaBotz`)
 buffer =await getBuffer(get.result.avatar)
 teks = `*[GITHUB STALK*]/n*🌱id*:${get.result.id}/n*🌱username*:${get.result.username}/n*🌱githuburl*:${get.result.githuburl}\n*🌱name*:${get.result.name}\n*🌱company*:${get.result.company}\n*🌱blog*:${get.result.blog}\n*🌱bio*:${get.result.bio}\n*🌱email*:${get.result.email}\n*🌱publicrepos*:${get.result.publicrepos}\n*🌱followers*:${get.result.followers}\n*🌱following*:${get.result.following}`
 Ryuu.sendMessage(from, bufffer, image, {quoted: mek, caption: teks}) 
