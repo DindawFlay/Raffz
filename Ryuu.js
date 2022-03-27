@@ -1153,6 +1153,7 @@ ${tampilUcapan}
 ✾ ${prefix}script
 ✾ ${prefix}verify
 ✾ ${prefix}creator
+✾ ${prefix}githubstalk
 
 🌱 _*Group Menu*_ 🌱
 ✾ ${prefix}welcome *on/off*
