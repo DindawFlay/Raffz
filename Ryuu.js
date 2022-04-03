@@ -3438,7 +3438,7 @@ case 'githubstalk':
 if (!isUser) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
 if (!c) return reply('example:githubstalk ERLANRAHMAT')
 reply(mess.wait)
-get = await fetch.json(`https://betakey-api.herokuapp.com/docs/other/ghstalk?username=${username}&apikey=betakey`)
+get = await fetch.json(`https://betakey-api.herokuapp.com/docs/other/ghstalk?username=${text}&apikey=betakey`)
 buffer =await getBuffer(get.result.avatar)
 teks = `*[GITHUB STALK*]/n*🌱id*:${get.result.id}/n*🌱username*:${get.result.username}/n*🌱githuburl*:${get.result.githuburl}\n*🌱name*:${get.result.name}\n*🌱company*:${get.result.company}\n*🌱blog*:${get.result.blog}\n*🌱bio*:${get.result.bio}\n*🌱email*:${get.result.email}\n*🌱publicrepos*:${get.result.publicrepos}\n*🌱followers*:${get.result.followers}\n*🌱following*:${get.result.following}`
 Ryuu.sendMessage(from, bufffer, image, {quoted: mek, caption: teks}) 
@@ -3461,7 +3461,7 @@ case 'ytsearch': case 'yts':
 if (!isUser) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
 if (!c) return reply('Masukin yg mau dicari contoh:yts RyuBotz')
 reply(mess.wait)
-get = await fetchJson(`https://betakey-api.herokuapp.com/docs/download/ytsearch?query=${query}&apikey=betakey`)
+get = await fetchJson(`https://betakey-api.herokuapp.com/docs/download/ytsearch?query=${teks}&apikey=betakey`)
 reply(`${get.result}`)
 break
 
